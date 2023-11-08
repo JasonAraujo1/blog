@@ -9,6 +9,7 @@
 
 body{
  height: 100vh;
+ background-color:var(--roxo) ;
  
 }
 
@@ -18,6 +19,7 @@ body *{
      font-family: 'Roboto', sans-serif;
      
      */ 
+    
 }
 
 :root{
@@ -39,8 +41,16 @@ body *{
 header{
     background-color: var(--roxo);
     display: flex;
-    padding: 50px;
+    
     align-items: center;
+    justify-content: center;
+   max-width: 1350px;
+   
+   width: 100%;
+  
+   
+   margin: auto;
+    
 }
 
 header h1{/*logo*/
@@ -64,7 +74,7 @@ header ul{/*home/sobre/categorias/contato*/
     gap: 50px;
     margin: auto;
     padding: 20px;
-    justify-content: center;
+   
     
     color: var(--branco-letras);
     font-family: roboto;
@@ -119,11 +129,11 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
 
 /*MAIN*/
-.all{
-    flex: 0 1 auto;
-    max-width: 1400px;
-}
 
+
+.hoverBox{
+    padding: 10px;
+}
 
 /*container 1*/
 
@@ -131,15 +141,18 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
     display: flex;
     
-    justify-content: space-between;
+    
 
     background-color: var(--roxo);
 
     padding: 0 50px;
     padding-bottom: 30px;
-    gap: 60px;/*distância entre lado A e B*/
+    gap:10vw;/*distância entre lado A e B*/
 
     border-bottom: 3px solid var(--verde);/*linha verde*/
+
+    justify-content:center ;
+    
 }
 
 
@@ -203,13 +216,13 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
     display: flex;
     
-    justify-content: space-between;
+    justify-content: center;
 
     background-color: var(--branco);
 
     padding: 40px 50px;
     
-    gap: 60px;/*distância entre lado A e B*/
+    gap:10vw;/*distância entre lado A e B*/
 
    
 }
@@ -229,9 +242,12 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
     
 }
 
+.grayLine{
+   border: 1px solid var(--branco-letras);
+}
+
 .ladoB1{/* linha cinza entre texto*/
-    border-bottom: 2px solid var(--branco-letras);
-    padding-bottom: 20px;
+   
     
 }
 
@@ -264,16 +280,17 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
     display: flex;
     
-    justify-content: space-between;
+   justify-content: center;
 
     background-color: var(--branco);
 
     padding: 40px 50px;
     
-    gap: 20px;/*distância entre lado A e B*/
+    gap:7vw;/*distância entre lado A e B e C*/
 
    
 }
+
 
 
 .container3 .ladoA, .container3 .ladoB, .container3 .ladoC{
@@ -343,6 +360,10 @@ header ul li:not(hover){/*text header*/
     box-shadow: var(--box-shadow);
     transition: 0.2s;
     cursor: pointer;
+    transform: scale(1.02);
+}
+.hoverBox:not(hover){/*amimação hover shadow box do main*/
+    transition: 0.8s;
 }
 
 

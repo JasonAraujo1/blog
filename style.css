@@ -9,6 +9,7 @@
 
 body{
  height: 100vh;
+ 
 }
 
 body *{
@@ -22,19 +23,23 @@ body *{
 :root{
     --roxo:#290742 ;
     --roxo-darker:#170027;
+    --roxo-darker-letras:#41056b;
     --roxo-lighter:#9E6DC2;
     --branco:#FFFFFF;
     --branco-letras: #e6e1e1da;
     --branco-input:rgba(197, 193, 193, 0.541);
     --verde:#4FFF4B;
+    --box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.20);
 }
+
+
 
 
 /*HEADER*/
 header{
     background-color: var(--roxo);
     display: flex;
-    padding: 40px;
+    padding: 50px;
     align-items: center;
 }
 
@@ -43,7 +48,7 @@ header h1{/*logo*/
     color: var(--branco);
     font-family: Bebas Neue;
 
-    padding-left: 40px;
+   
 }
 
 header h1 span{/*ponto*/
@@ -99,7 +104,7 @@ input[type="search"]::placeholder {/*search text placeholder*/
 i.bi-search{/*icon search input*/
     color: var(--branco);
     background-color: var(--roxo-lighter);
-    padding: 7px;
+    padding: 7px 20px;
     border-top-right-radius:5px ;
     border-bottom-right-radius:5px ;
 
@@ -113,17 +118,199 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
 
 
+/*MAIN*/
+.all{
+    flex: 0 1 auto;
+    max-width: 1400px;
+}
+
+
+/*container 1*/
+
+.container1{
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    background-color: var(--roxo);
+
+    padding: 0 50px;
+    padding-bottom: 30px;
+    gap: 60px;/*distância entre lado A e B*/
+
+    border-bottom: 3px solid var(--verde);/*linha verde*/
+}
+
+
+.container1 .ladoA{
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;    /*distância entre textos h1, p, link*/
+}
+
+
+.container1 .ladoB img{
+    max-width: 570px;
+    border-radius: 10px;
+    
+}
+
+.container1 .ladoA h1{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+
+    color: var(--roxo-lighter);
+}
+
+.container1 .ladoA p{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: var(--branco-letras);
+
+}
+
+.container1 .ladoA a{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    color: var(--roxo-lighter);
+
+    
+}
+
+ i.bi-arrow-bar-right{
+
+    position: absolute;
+    transform: translateY(10%);
+
+    color: var(--verde);
+}
+
+
+/*container2*/
+
+.container2{
+    
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    background-color: var(--branco);
+
+    padding: 40px 50px;
+    
+    gap: 60px;/*distância entre lado A e B*/
+
+   
+}
+
+
+.container2 .ladoA, .ladoB{
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;    /*distância entre textos h1, p, link*/
+}
+
+
+.container2 .ladoA img{
+    max-width: 570px;
+    border-radius: 10px;
+    
+}
+
+.ladoB1{/* linha cinza entre texto*/
+    border-bottom: 2px solid var(--branco-letras);
+    padding-bottom: 20px;
+    
+}
+
+.container2 .ladoA h2, .ladoB h2{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: var(--roxo-darker-letras);
+}
+
+.container2 .ladoA p, .ladoB p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--roxo-darker);
+  
+
+}
 
 
 
 
 
+/*container3*/
+
+.container3{
+    
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    background-color: var(--branco);
+
+    padding: 40px 50px;
+    
+    gap: 20px;/*distância entre lado A e B*/
+
+   
+}
+
+
+.container3 .ladoA, .container3 .ladoB, .container3 .ladoC{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;    /*distância entre textos h1, p, link*/
+}
+
+
+.container3 .ladoA img, .container3 .ladoB img, .container3 .ladoC img{
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
 
 
 
 
+.container3 .ladoA h2, .container3 .ladoB h2, .container3 .ladoC h2{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
 
+    color: var(--roxo-darker-letras);
+}
 
+.container3 .ladoA p, .container3 .ladoB p, .container3 .ladoC p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--roxo-darker);
+  
+
+}
 
 
 
@@ -132,14 +319,32 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
 /*HOVER*/
 
-header ul li:hover{
+header ul li:hover{/*text header*/
    color: var(--branco);
     transition: 0.2s;
 }
-header ul li:not(hover){
+header ul li:not(hover){/*text header*/
    
     transition: 0.5s;
 }
+
+
+.container1 .ladoA a:hover{/*veja mais*/
+    color: var(--verde);
+    transition:0.2s ;
+}
+.container1 .ladoA a:not(hover){/*veja mais*/
+    transition:0.5s ;
+}
+
+.hoverBox:hover{/*amimação hover shadow box do main*/
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 
 
 

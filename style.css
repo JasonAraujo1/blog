@@ -27,6 +27,7 @@ body *{
     --roxo-darker:#170027;
     --roxo-darker-letras:#41056b;
     --roxo-lighter:#9E6DC2;
+    --roxo-backgroung-img:rgba(151, 5, 255, 0.952);
     --branco:#FFFFFF;
     --branco-letras: #e6e1e1da;
     --branco-input:rgba(197, 193, 193, 0.541);
@@ -50,6 +51,9 @@ header{
   
    
    margin: auto;
+
+   padding-top: 30px;
+   padding-bottom: 50px;
     
 }
 
@@ -110,7 +114,7 @@ input[type="search"]::placeholder {/*search text placeholder*/
     font-family: Roboto;
     font-size: 11px;
     font-weight: 400;
-
+    
     color: var(--branco-input);
   }
 
@@ -135,25 +139,18 @@ input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
 
 /*MAIN*/
 .imagemColorida{
-    
-
-    background-color: #8f0feba2;
+    background-color: var(--roxo-backgroung-img);
 }
 
-
-
-div img{/*filtros de imagem*/
-    filter: hue-rotate(-40deg);
-    opacity: 70%;
-    
+div img{/*filtros de imagem*/   
+    opacity: 70%;   
 }
- 
-
 
 .hoverBox{/*class para vinculada com html para usar o hover*/
     padding: 10px;
-   
 }
+
+
 
 /*container 1*/
 
@@ -184,11 +181,18 @@ div img{/*filtros de imagem*/
 }
 
 
-.container1 .ladoB img{
-    max-width: 570px;
+.container1 .ladoB {
+    max-width: 550px;
     border-radius: 10px;
+    max-height: 360PX ;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
     
 }
+
+
+
 
 .container1 .ladoA h1{
     font-family: Poppins;
@@ -336,6 +340,7 @@ div img{/*filtros de imagem*/
     display: flex;
     flex-direction: column;
     gap: 14px;    /*distância entre textos h1, p, link*/
+    max-width: 350px;
 }
 
 
@@ -359,7 +364,9 @@ div img{/*filtros de imagem*/
 
 }
 
-
+.container3 .ladoB div{
+    max-height: 220px;/*altura da imagem do meio container3*/
+}
 
 
 
@@ -405,5 +412,50 @@ header ul li:not(hover){/*text header*/
 /*MOBILE*/
 
 @media screen and (max-width:600px) {
+    .container1, .container2, .container3{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    input{/*search box*/
+        padding: 2px 60px 8px 10px;
+        width: 30vw;
+        margin-right: 20px;
+    }
+
+    i.bi-search{/*icon search input*/
+        padding: 3px 8px;
+        margin-right: 12px;
+       
+    }
+
+    input,i.bi-search {/*posicionamento do input search e icon*/
+        position: absolute;
+        right: 8%;
+        transform: translateY(70%);
+        
+    }
+
+
+    header ul{
+        padding-bottom: 6vh;
+        gap: 15px;
+    }
     
+    header{
+        padding: 30px;   
+    }
+
+    .container2 .ladoA div img {
+        max-height: 200px;
+        max-width: 300px;
+        
+    }
+   
+    .container2 .ladoA div  {
+        max-height: 200px;
+        max-width: 300px;
+        
+    }
 }

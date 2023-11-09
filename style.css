@@ -36,7 +36,10 @@ body *{
 }
 
 
-
+a{/*all links*/
+    text-decoration: none;
+    font-style: none;
+ }
 
 /*HEADER*/
 header{
@@ -219,7 +222,7 @@ div img{/*filtros de imagem*/
     font-size: 18px;
     font-weight: 700;
 
-    text-decoration: none;
+   
     cursor: pointer;
 
     color: var(--roxo-lighter);
@@ -257,10 +260,7 @@ div img{/*filtros de imagem*/
    
 }
 
-.container2 .ladoB a{/*box ladob1 ladob2*/
-   text-decoration: none;
-   font-style: none;
-}
+
 
 
 

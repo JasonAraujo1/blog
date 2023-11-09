@@ -318,7 +318,6 @@ div img{/*filtros de imagem*/
     
     gap:7vw;/*distância entre lado A e B e C*/
 
-    border: 1px solid var(--branco);/*linha dividindo container2 do container3. Usando o border para cobrir*/
    
 }
 
@@ -429,18 +428,16 @@ header ul li:not(hover){/*text header*/
     i.bi-search{/*icon search input*/
         padding: 3px 8px;
         margin-right: 12px;
-       
     }
 
     input,i.bi-search {/*posicionamento do input search e icon*/
         position: absolute;
         right: 8%;
         transform: translateY(70%);
-        
     }
 
 
-    header ul{
+    header ul{/*lista links barra nav*/
         padding-bottom: 6vh;
         gap: 15px;
     }
@@ -451,13 +448,17 @@ header ul li:not(hover){/*text header*/
 
     .container2 .ladoA div img {
         max-height: 200px;
-        max-width: 300px;
-        
+        max-width: 300px;   
     }
    
     .container2 .ladoA div  {
         max-height: 200px;
         max-width: 300px;
         
+    }
+
+     .container2, .container3{
+        gap: 8vh;/*distância entre as boxes (div-images e box)*/
+        border: 2px solid var(--branco);/*linha dividindo container2 do container3. Usando o border para cobrir*/
     }
 }

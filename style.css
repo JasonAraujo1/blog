@@ -251,6 +251,7 @@ div img{/*filtros de imagem*/
     gap:10vw;/*distância entre lado A e B*/
 
    
+   
 }
 
 
@@ -305,7 +306,7 @@ div img{/*filtros de imagem*/
 /*container3*/
 
 .container3{
-    
+    background-color: var(--branco);
 
     display: flex;
     
@@ -317,6 +318,7 @@ div img{/*filtros de imagem*/
     
     gap:7vw;/*distância entre lado A e B e C*/
 
+    border: 1px solid var(--branco);/*linha dividindo container2 do container3. Usando o border para cobrir*/
    
 }
 

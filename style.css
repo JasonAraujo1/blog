@@ -128,6 +128,9 @@ i.bi-search{/*icon search input*/
     margin-right: 12px;
 
     cursor: pointer;
+
+    overflow: hidden;
+    max-height: 31px;
    
 }
 
@@ -423,19 +426,23 @@ header ul li:not(hover){/*text header*/
         padding: 2px 60px 8px 10px;
         width: 30vw;
         margin-right: 20px;
+
+        position: absolute;/*posicionamento do input */
+        right: 8%;
+        transform: translateY(70%);
     }
 
     i.bi-search{/*icon search input*/
         padding: 3px 8px;
         margin-right: 12px;
-    }
 
-    input,i.bi-search {/*posicionamento do input search e icon*/
+        transform: translateY(75%);/*posicionamento search e icon*/
         position: absolute;
         right: 8%;
-        transform: translateY(70%);
+        
     }
 
+   
 
     header ul{/*lista links barra nav*/
         padding-bottom: 6vh;

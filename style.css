@@ -460,5 +460,6 @@ header ul li:not(hover){/*text header*/
      .container2, .container3{
         gap: 8vh;/*distância entre as boxes (div-images e box)*/
         border: 2px solid var(--branco);/*linha dividindo container2 do container3. Usando o border para cobrir*/
+        
     }
 }

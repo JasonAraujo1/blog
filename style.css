@@ -257,6 +257,12 @@ div img{/*filtros de imagem*/
    
 }
 
+.container2 .ladoB a{/*box ladob1 ladob2*/
+   text-decoration: none;
+   font-style: none;
+}
+
+
 
 .container2 .ladoA, .ladoB{
     max-width: 570px;

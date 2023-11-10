@@ -501,9 +501,7 @@ header ul li:not(hover){/*text header*/
     header ul{/*lista links barra nav*/
        
         gap: 15px;
-        
-        
-        border: 2px solid red;
+     
 
         height: 9vh;
 

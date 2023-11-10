@@ -64,15 +64,15 @@ header h1{/*logo*/
     font-size: 3vh;
     color: var(--branco);
     font-family: Bebas Neue;
-    padding: 0 10px;
+    padding: 0 2px;
    
     gap:10vw;/*distância entre lado A e B*/
-
-   
+ 
 }
 
 header h1 span{/*ponto*/
-    color:var(--verde)
+    color:var(--verde);
+   
 }
 
 

@@ -64,10 +64,10 @@ header h1{/*logo*/
     font-size: 3vh;
     color: var(--branco);
     font-family: Bebas Neue;
-    padding: 0 2px;
-   
+    padding: 0 10px;
+    
     gap:10vw;/*distância entre lado A e B*/
- 
+    
 }
 
 header h1 span{/*ponto*/
@@ -468,8 +468,8 @@ header ul li:not(hover){/*text header*/
     input, i.bi-search{
         position: absolute;
         right: 0;
-        margin-top: 15px;/*posicionamento search no header*/
-        margin-right:55px; /*posicionamento search no header*/
+        margin-top: 10px;/*posicionamento search no header*/
+        margin-right:40px; /*posicionamento search no header*/
         flex-wrap: nowrap;
     }
 
@@ -493,20 +493,21 @@ header ul li:not(hover){/*text header*/
         
     }
 
-
-    header ul{/*lista links barra nav*/
-        padding-bottom: 6vh;
-        gap: 15px;
-        
-        padding-right: 0;
-        
-    }
-    
     header{
         padding: 30px 0 30px 50px;
         
         
     }
+    header ul{/*lista links barra nav*/
+        padding-bottom: 6vh;
+        gap: 15px;
+        
+        padding-right: 0;
+        padding-top: 10px;
+        
+    }
+    
+  
    
 
 

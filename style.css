@@ -452,13 +452,13 @@ header ul li:not(hover){/*text header*/
         width: 30vw;
         margin-right: 20px;
 
-        position: absolute;/*posicionamento do input */
+        position: absolute;
         right: 8%;
-        transform: translateY(70%);
+        transform: translateY(70%);/*posicionamento do input */
     }
 
     i.bi-search{/*icon search input*/
-        padding: 3px 8px;
+        padding: 1px 8px;/*diferente aqui para ajustar no @media*/
         margin-right: 12px;
 
         transform: translateY(75%);/*posicionamento search e icon*/

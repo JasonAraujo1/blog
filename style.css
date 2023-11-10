@@ -552,7 +552,7 @@ header ul li:not(hover){/*text header*/
     }
 
     .hoverBox{
-       box-shadow: var(--box-shadow);    
-       border-radius: 8px;
+     border-top: 1px solid var(--branco-letras);
+     padding: 20px;
     }
 }

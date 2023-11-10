@@ -553,6 +553,6 @@ header ul li:not(hover){/*text header*/
 
     .hoverBox{
        box-shadow: var(--box-shadow);    
-       border-radius: 5px;
+       border-radius: 8px;
     }
 }

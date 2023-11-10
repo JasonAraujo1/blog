@@ -469,7 +469,7 @@ header ul li:not(hover){/*text header*/
         position: absolute;
         right: 0;
         margin-top: 15px;/*posicionamento search no header*/
-        margin-right:70px; /*posicionamento search no header*/
+        margin-right:60px; /*posicionamento search no header*/
         flex-wrap: nowrap;
     }
 
@@ -498,11 +498,15 @@ header ul li:not(hover){/*text header*/
         padding-bottom: 6vh;
         gap: 15px;
         
+        padding-right: 0;
+        
     }
     
     header{
         padding: 30px;   
+        padding-right: 0;
     }
+   
 
 
     .container2 .ladoA a div img {/*largura/altura máxima da imagem dentro da div*/

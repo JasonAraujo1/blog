@@ -97,6 +97,11 @@ header ul li{/*home/sobre/categorias/contato*/
     cursor: pointer;
 }
 
+.ativo{/*color click ul li*/
+    color: var(--branco);
+    text-decoration: underline;
+    font-weight: 600; 
+}
 
 input{/*search box*/
     padding: 8px 30px;
@@ -264,17 +269,24 @@ div img{/*filtros de imagem*/
 
 
 
-.container2 .ladoA, .ladoB{
+.container2 .ladoA , .ladoB {/*tamanho das divs- largura*/
     max-width: 570px;
     display: flex;
     flex-direction: column;
-    gap: 14px;    /*distância entre textos h1, p, link*/
+    
+}
+.container2 .ladoA a, .ladoB a {/*distância entre textos h1, p, link*/
+    display: flex;
+    gap: 14px;    
+    flex-direction: column;
+    
 }
 
-.container2 .ladoA div {/*div do filtro roxo*/
+.container2 .ladoA a div {/*div do filtro roxo*/
     max-height: 360px;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 
 
@@ -325,7 +337,7 @@ div img{/*filtros de imagem*/
 
     padding: 40px 50px;
     
-    gap:7vw;/*distância entre lado A e B e C*/
+    gap:5.5vw;/*distância entre lado A e B e C*/
 
    
 }
@@ -346,7 +358,7 @@ div img{/*filtros de imagem*/
 }
 
 
-.container3 .ladoA  , .container3 .ladoB , .container3 .ladoC {
+.container3 .ladoA  a , .container3 .ladoB a , .container3 .ladoC a{
     display: flex;
     flex-direction: column;
     gap: 14px;    /*distância entre textos h1, p, link*/
@@ -374,23 +386,30 @@ div img{/*filtros de imagem*/
 
 }
 
-.container3 .ladoB div{
-    max-height: 220px;/*altura da imagem do meio container3*/
+.container3 .ladoB a div{
+   
+    max-height: 234px;/*altura da imagem do meio container3*/
 }
 
+.container3 .ladoB a div img{
+   
+    max-height: 234px;/*altura da imagem do meio container3*/
+}
 
 
 
 /*HOVER*/
 
+
 header ul li:hover{/*text header*/
    color: var(--branco);
+    font-weight: 600;
     transition: 0.2s;
 }
 header ul li:not(hover){/*text header*/
    
-    transition: 0.5s;
-}
+     transition: 0.2s;
+ }
 
 
 .container1 .ladoA a:hover{/*veja mais*/
@@ -448,7 +467,6 @@ header ul li:not(hover){/*text header*/
         
     }
 
-   
 
     header ul{/*lista links barra nav*/
         padding-bottom: 6vh;
@@ -459,16 +477,38 @@ header ul li:not(hover){/*text header*/
         padding: 30px;   
     }
 
-    .container2 .ladoA div img {
-        max-height: 200px;
-        max-width: 300px;   
-    }
-   
-    .container2 .ladoA div  {
-        max-height: 200px;
-        max-width: 300px;
+
+    .container2 .ladoA a div img {/*largura/altura máxima da imagem dentro da div*/
+        height: 100%;
+        width: 110%;/*110% pra não ficar uma borda roxa sobrando em baixo*/
+        max-width: 290px;
+        max-height: 193px;
         
     }
+   
+    .container2 .ladoA a div  {/*altura máxima da div roxo*/
+        width: 100%;
+        height: 100%;
+        max-width: 290px;
+        max-height: 193px;
+    }
+
+    .container3 .ladoB a div img{/*largura/altura máxima da imagem dentro da div*/
+        width: 100%;
+        height: 100%;
+        max-width: 290px;
+        max-height: 193px;
+    
+    }
+
+    .container3 .ladoB a div  {/*altura máxima da div roxo*/
+        width: 100%;
+        height: 100%;
+        max-width: 290px;
+        max-height: 193px;
+    
+    }
+
 
      .container2, .container3{
         gap: 8vh;/*distância entre as boxes (div-images e box)*/

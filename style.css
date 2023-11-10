@@ -503,8 +503,9 @@ header ul li:not(hover){/*text header*/
     }
     
     header{
-        padding: 30px;   
-        padding-right: 0;
+        padding: 30px 0 30px 50px;
+        
+        border: 2px solid red;
     }
    
 

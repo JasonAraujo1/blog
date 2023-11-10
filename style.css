@@ -550,4 +550,9 @@ header ul li:not(hover){/*text header*/
         border: 2px solid var(--branco);/*linha dividindo container2 do container3. Usando o border para cobrir*/
         
     }
+
+    .hoverBox{
+       box-shadow: var(--box-shadow);    
+       border-radius: 5px;
+    }
 }
